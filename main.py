@@ -1,1 +1,1 @@
-import funciones_cuadrado()
+import funciones_cuadrado(
