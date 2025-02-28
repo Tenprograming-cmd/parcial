@@ -1,37 +1,37 @@
-# suma = 0  # Inicializar la variable fuera del bucle
-
-# for i in range(2, 11, 2):  # Itera desde 2 hasta 10 con paso de 2
-#     suma +=1  # Acumula la suma en cada iteración
-#     print(suma)  # Muestra el resultado final 
-
-# suma = 0  # Inicializar la variable fuera del bucle
-
-# for i in range(2, 11, 2):  # Itera desde 2 hasta 10 con paso de 2
-#     print(suma)  # Muestra el resultado final 
-#     suma +=i  # Acumula la suma en cada iteración
-
-# def suma(a, b):
-#     return a + b
-
-# resultado = suma(5, 3)
-# print("La suma es:", resultado)
-
-def procesar_lista(numeros):
-    if not numeros:
-        return "la lista esta vacia. "
-    suma=sum(numeros) 
-    maximo=max(numeros) 
-    minimo=min(numeros) 
-    promedio=suma/len(numeros) 
-    return suma,maximo,minimo,promedio
-
-entrada=int(input("ingrese  hasta 10 numeros enteros "))
-numero=list(map())
-
-
-#-----------------------------------------------------------------------
 
 
 
 
+entrada = input("Ingrese hasta 15 números enteros separados por espacios: ")
+numeros = list(map(int, entrada.split()))[:15]
+cuadrados = list(map(lambda x: x ** 2, numeros))
+print("Lista original:", numeros)
+print("Lista al cuadrado:", cuadrados)
+
+
+
+
+# # --------------------------------------------------------------------------------------------------------------------------------- #
+
+# def procesar_lista(numeros):
+#    if not numeros: 
+#        return "La lista está vacía."
+#    suma = sum(numeros)
+#    maximo = max(numeros)
+#    minimo = min(numeros)
+#    promedio = suma / len(numeros)
+#    return suma, maximo, minimo, promedio
+# # Pedir al usuario ingresar los números
+# entrada = input("Ingrese hasta 10 números enteros separados por espacios: ")
+# numeros = list(map(int, entrada.split()))[:10]  # Convierte a lista de enteros y toma solo 10
+# # Llamar a la función y mostrar los resultados
+# resultado = procesar_lista(numeros)
+# if isinstance(resultado, str):  # Si la lista estaba vacía
+#    print(resultado)
+# else:
+#    suma, maximo, minimo, promedio = resultado
+#    print(f"Suma: {suma}")
+#    print(f"Número más grande: {maximo}")
+#    print(f"Número más pequeño: {minimo}")
+#    print(f"Promedio: {promedio:.2f}")
 
